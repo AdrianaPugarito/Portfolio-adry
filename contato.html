@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="portafolio.cs">
+    <title>Contato</title>
+</head>
+<body>
+
+  <!--Menu-->
+    <header class="header">
+        <div class="logo-header">
+            <img class="img" src="img/adry.jpg" alt="Foto-Adriana">
+        </div>
+
+      <section id="titulo">
+        <article>
+          <h1>
+            Desenvolvedor Front-End Junior e Game Designer
+          </h1>
+          <hr> <br>
+        </article>
+
+        <nav class="nav-menu">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/menu-1899422-1606841.png" alt=""></i>
+            </label>
+
+            <ul>
+              <li><a href=><h3></h3></a></li>
+              <li><a href="quem-sou.html"><h3>Quem sou</h3></a></li>
+              <li><a href="projetos.html"><h3>Projetos</h3></a></li>
+              <li><a href="conhecimentos.hml"><h3>Hard Skills</h3></a></li>
+              <li><a href="apiGitHub.html"><h3>API GitHub</h3></a></li>
+              <li><a href="contato.html"><h3>Contato</h3></a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <form class="form" id="formulario">
+          <h2>Precisa de um</h2>
+          <div>
+            <br><h2>"Desenvolvedor Junior"</h2><br><h3>Bora, vamos trabalhar juntos!!!</h3><br>
+        <!--<img id="img-dev"  src="https://cdni.iconscout.com/illustration/premium/thumb/multitasking-woman-3993983-3305166.png" target="_blank"> <br>-->
+          </div>
+          
+          <div class="form-container">
+        <!--Grupo: Nome-->
+        <div class="fomulario" id="grupo-nome">
+          <labe for="nome" class="formulario-label">Nome:</labe>
+          <div class="formulario-grupo--input">
+            <input type="text" class="formulario-input" name="nome" id="nome" placeholder="João">
+            <i class="formulario--validacao-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario--input-erro" >Nome só pode conter letras</p>
+        </div>
+
+        <!--Grupo: Telefone-->
+        <div class="fomulario" id="grupo-telefone">
+          <labe for="telefone" class="formulario-label">Teléfone:</labe>
+          <div class="formulario-grupo--input">
+            <input type="telefono" class="formulario-input" name="telefone" id="telefone" placeholder="(xx)xxx-xxxxxx">
+            <i class="formulario--validacao-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario--input-erro">O teléfono só pode conter números e um DDD</p>
+        </div>
+
+        <!--Grupo: Email-->
+        <div class="fomulario" id="grupo-email">
+          <labe for="email" class="formulario-label">Email:</labe>
+          <div class="formulario-grupo--input">
+            <input type="email" class="formulario-input" name="email" id="email" placeholder="nome@correo.com">
+            <i class="formulario--validacao-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario--input-erro">O Email só pode conter letras, números, pontos, guiones e guion baixo</p>
+        </div>
+
+        <!--Grupo: Messagem-->
+         <div class="formulario" id="grupo-termos">
+				<label class="formulario-label">
+					<input class="formulario__checkbox" type="checkbox" name="termos" id="termos">
+					Todas minhas informãções estão corretas.
+				</label>
+			</div>
+      
+      <div class="fomulario" id="grupo-menssagem">
+          <label class="formulario-label">Menssagem
+          <div class="formulario-grupo--input">
+            <textarea class="form-input-mensagem" name="menssagem" placeholder="Mensagem"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="formulario--menssagem"  id="formulario--menssagem">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Erro:</b> Por favor, preencha o formulário corretamente!</p>
+        </div>
+
+        <div class="formulario--grupo-btn-enviar">
+        <button type="submit" class="formulario--btn" name="termos" >Enviar</button>
+        <p class="formulario--menssagem-sucesso" id="formulario--menssagem-sucesso"></p>
+        </div>
+      </div>
+
+      </form>
+
+      <!--Footer-->
+    <footer id="contato" class="footer">
+  
+        <div class="icon-redes">
+          <a href="https://wa.me/message/5FJVLWMMMER7K1" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-64/whatsapp-43-189795.png" target="_blank"></a>
+  
+          <a href="https://discord.gg/AdrianaPugarito#2327" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-64/discord-2752210-2285027.png" target="_blank"></a>
+  
+          <a href="https://www.linkedin.com/in/adriana-pugarito-1a33b41b5" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-64/linkedin-162-498418.png" target="_blank"></a>
+          </a>
+  
+          <a
+            href="https://www.instagram.com/analuciaiadr" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-64/instagram-188-498425.png" target="_blank"></a>
+          </a>
+  
+          <a href="https://github.com/AdrianaPugarito" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-64/github-2752182-2284999.png" target="_blank"></a>
+          </a>
+        </div>
+  
+        <p class="copy">&copy Orgulhosamente feito por Adriana Pugarito</p>
+      </footer>
+
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

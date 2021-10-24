@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    font: 400 18px 'Scheherazade';
+}
+
+.apiGitHub{
+  padding-top: 15px;
+  color: #5a034b;
+  text-shadow: 7px 4px 5px floralwhite;
+}
+
+.form-control {
+    width: 100%;
+    height: 60px;
+    line-height: 45px;
+    color: #5a034b;
+    border: 3px solid rgb(179, 115, 224);
+    border-radius: 8px;
+    padding: 0 24px;
+    margin: 5px 2px;
+    background-color: white; 
+}
+
+.form-control:focus{ /*quando façam click troque de cor*/
+    border: 3px solid #ecbbe4; 
+    outline: none;
+    box-shadow: 3px 0px 30px #924285 0.4;
+}
+
+.img-github{
+    display: flex;
+    width: 250px;
+    box-shadow: 5px 5px 5px 5px #5a034b;
+    margin: 15px 100px 20px 890px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 15;
+}
+
+.btn-danger{
+    width: 40%;
+    height: 40px;
+    background: #130329;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 210px 10px;
+    transition: filter 0.2s;
+    cursor: pointer;
+}
+
+.btn-danger:hover{
+    box-shadow: 3px 0px 30px #5a034b;
+}
+
+.app{
+    width: 100%;
+    border-radius: 8px;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    background: #7F4AA4;
+    
+}
+
+
+.app .container{
+    width: 100%;
+    padding: 15px;
+    top: -40px;
+    background:linear-gradient( #cd9cf2 0%, #f6f3ff 100%);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app form{
+    width: 100%;
+    max-width: 700px;
+}
+
+/*Media Query*/
+
+@media (max-width: 600px){
+  
+  .img-github{
+    width: 85px;
+    margin: 70px 100px 20px 270px;
+}
+
+.app .container{
+    width: 110%;
+    margin-left: -22px;
+    
+}
+
+.btn-danger{
+    margin-left: 100px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.apiGitHub .titulo {
+  padding-top: 8px;
+  font-size: 25px;
+}
+
+}

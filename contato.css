@@ -1,0 +1,204 @@
+/* importando fontes de google*/
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+/*considerações gerais para evitar que o navegador faça cambios*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  h3{
+    color: #fefbfb;
+    text-align: center;
+  }
+
+  .form{
+      background: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
+      width: 50%;
+      margin: 30px auto;
+      max-width: 400%;
+      border-radius: 1em;
+      padding: 3.5em 2.5em;
+  }
+
+  .form-container{
+    display: grid;
+    gap: 20px;
+  }
+
+  .formulario-label{
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .formulario__checkbox{
+    accent-color: #5a034b; /*troca o color do bottom checkbox*/
+  }
+
+  .formulario-grupo--input{
+    position: relative;
+  }
+
+  .formulario-input{
+    width: 100%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    color: #5a034b;
+  }
+
+  .formulario-input:focus{/*quando façam click troque de cor*/
+    border: 3px solid #ecbbe4; 
+    outline: none;
+    box-shadow: 3px 0px 30px #924285 0.4;
+  }
+
+  .form-input-mensagem{
+    width: 100%;
+    font-family: 'Scheherazade';
+    text-align: justify;
+    font-size: 1rem;
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+    border-radius: 3px;
+  }
+
+  .form-input-mensagem:focus{
+    border: 3px solid #ecbbe4; 
+    outline: none;
+    box-shadow: 3px 0px 30px #924285 0.4;
+  }
+
+  .formulario--input-erro{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .formulario--input-erro-ativo{/*para quando o erro do input esteja ativo*/
+    display: block;
+  }
+
+  .formulario--validacao-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100; /*para que esteja por cima */
+    font-size: 16px;
+    opacity: 0;
+  }
+
+  .formulario--menssagem{
+    height: 45px;
+    line-height: 45px;
+    background-color: #924285;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+  }
+
+  .formulario--menssagem-ativo{
+    display: block;
+  }
+
+  .formulario--grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario--btn{
+    height: 45px;
+    line-height: 45px;
+    width: 80%;
+    position: relative;
+    top: 40%;
+    background: #130329;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+  }
+
+  .formulario--btn:hover{
+    box-shadow: 3px 0px 30px #5a034b;
+  }
+
+  .formulario--menssagem-sucesso{
+    font-size: 14px;
+    color: #35032a;
+    display: none;
+  }
+
+  .formulario--menssagem-sucesso-ativo{
+    display: block;
+  }
+
+  /*Estilo para validação*/
+  .formulario-grupo-correto .formulario--validacao-estado{
+    color: #1ed12d;
+    opacity: 1;
+  }
+
+  .formulario-grupo-incorreto .formulario-label{
+    color: red;
+  }
+
+  .formulario-grupo-incorreto .formulario--validacao-estado{
+    color: red;
+    opacity: 1;
+  }
+
+  .formulario-grupo-incorreto .formulario-input{
+    color: red;
+  }
+
+  footer{
+    padding: 15px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(
+            225deg,
+            rgba(102, 16, 242, 0.3) 0%,
+            rgba(102, 16, 242, 0) 100%
+          );
+  }
+  
+  .copy {
+    color: #fefbfb;
+    opacity: 0.5;
+    padding: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+   /*Media Query*/
+
+  @media (max-width: 600px){
+    .form{
+      width: 80%;
+      padding: 3.5em 1em;
+    }
+
+    .formulario{
+      grid-column: 1;
+    }
+  
+
+    .copy{
+      font-size: 1rem;
+    }
+
+  }

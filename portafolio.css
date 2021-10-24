@@ -1,0 +1,339 @@
+/* importando fontes de google*/
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+/*considerações gerais para evitar que o navegador faça cambios*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+body{
+    background-color: #211522;
+    font-family: 'Scheherazade';
+  }
+
+  /*Scrollbar barra de rolagem*/
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color: rgb(196, 77, 243);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color:#cba6ce;
+    border-radius: 10px;
+  }
+
+  
+#titulo h1{
+  color: whitesmoke;
+  font-size: 40px;
+  text-shadow: 7px 4px 5px #924285;
+  text-align: center;
+}
+
+  h2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 7px 4px 5px #40118E;
+  }
+
+  a, li{
+    font-size: 15px;
+    color: whitesmoke;
+    justify-items: center;
+  }
+
+  .logo-header img{
+    width: 90px;
+    position: absolute;
+    top: 10px; 
+    left: 40px;
+  }
+
+  header{
+    background: linear-gradient(
+            225deg,
+            rgba(102, 16, 242, 0.3) 0%,
+            rgba(102, 16, 242, 0) 100%
+          );
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+    padding: .5rem 2rem;
+  }
+
+  .nav-menu ul{
+    display: flex;
+    align-items: center;
+    z-index: 20;
+  }
+
+  .nav-menu li{
+    margin-right: 5rem;/*para colocar espaço entre os nomes do menu*/
+  }
+
+  .nav-menu a:hover{
+    background: linear-gradient(
+            225deg,
+          rgba(240, 17, 154, 0) 0%,
+            #ecbbe4 100%
+          );
+    color: #924285; /*quando passa o mouse encima dos nomes do menu esteajam subrayados*/
+  }
+
+  .nav-menu li:last-child{ /*para fazer um botton na palavra contato*/
+    border: 2px solid #35032a;
+    padding: .25rem .75rem;
+    border-radius: 2rem; 
+  }
+
+  .menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+  }
+
+  .menu-icon, #check{
+      display: none;
+  }
+
+  div.eu {
+    width: 80%;
+    margin: 30px auto;
+    background: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    border: 4px solid;
+    border-image: linear-gradient( #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%) 1;
+  }
+  
+  div.eu img.direita {
+    width: 250px;
+    box-shadow: 7px 7px 7px 3px #40118E;
+    border-radius: 50%;
+    float: right;
+    margin-left: 15px;
+  }
+  
+  strong{
+    color: #eca1e0;
+  }
+  
+  div.aprendizados{
+    width: 80%;
+    margin: 30px auto;
+    background: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border: 4px solid;
+    border-image: linear-gradient( #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%) 1;
+  }
+
+  .contenedor-texto .aprendizado {
+     font-weight: bold;
+     color: #40118E;
+     overflow: hidden;
+  }
+  
+  #img-conhecimentos{
+    width: 60px;
+    display: inline-block;
+    margin: auto;
+    margin-right: 5rem;
+    border-radius: 10%;
+    box-shadow: 7px 7px 7px 3px #40118E;
+  
+  }
+  
+  #projetos { 
+    width: 80%;
+    margin: 30px auto;
+    background: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border: 4px solid;
+    border-image: linear-gradient( #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%) 1;
+  }
+  
+  .container{
+    position: relative;
+    width: 350px;
+    margin: 50px auto;
+    perspective: 1000px;
+    padding-top: 120px;
+  }
+  
+  .rotator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    margin: auto;
+    width: 55%;
+    height: 120px;
+    transform-style: preserve-3d;
+    animation: roter 50s linear infinite;
+  }
+
+  .rotator:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes roter {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #333;
+  }
+  .items:hover img {
+    transform: scale(1.2);
+  }
+  .items img {
+    height: 100%;
+    width: 100%;
+    transition: all 3s ease;
+  }
+  .items:first-child {
+    transform: rotateY(calc(40deg * 1)) translateZ(300px);
+  }
+  .items:nth-child(2) {
+    transform: rotateY(calc(40deg * 2)) translateZ(300px);
+  }
+  .items:nth-child(3) {
+    transform: rotateY(calc(40deg * 3)) translateZ(300px);
+  }
+  .items:nth-child(4) {
+    transform: rotateY(calc(40deg * 4)) translateZ(300px);
+  }
+  .items:nth-child(5) {
+    transform: rotateY(calc(40deg * 5)) translateZ(300px);
+  }
+  
+  /*Media Query*/
+
+  @media (max-width: 600px){
+
+      ::-webkit-scrollbar{
+          width: 0;
+      }
+
+      .checkbtn{
+          display: block;
+      }
+      .menu-icon{
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer;
+      }
+
+      .nav-menu ul{
+          display: block;
+          position: absolute;
+          top: 70px;
+          left: -100%;
+          width: 100%;
+          height: 100vh;
+          right: 0;
+          
+      }
+
+      .nav-menu ul li{
+          color: rgb(14, 0, 11);
+          padding: 2rem;
+          display: flex;
+          justify-content: center;
+          margin: 0;
+      }
+
+      .nav-menu ul li:last-child{
+        border: none;
+        padding: 0;
+        border-radius: none; 
+      }
+
+      #check:checked ~ ul{  /*Este símbolo ~ em css funciona muito parecido a + com a diferença que seleciona o ítem que esteja imediatamente depois e todos os seguintes.*/
+          left: 0;
+          transition: all .25s;
+      }
+
+      .logo-header img{
+        width: 40px;
+        top: 20px; 
+        left: 10px;
+      }
+
+      a, li{
+        color: #eca1e0;
+        font-size: 20px;
+        background-color: rgb(63, 5, 63);
+        opacity: .8;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+      }
+
+      #titulo h1{
+        font-family: 'Yanone Kaffeesatz';
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+
+      div.eu img.direita {
+        width: 100px;
+        float: right;
+      }
+
+      p{
+        text-align: justify;
+      }
+
+      #img-conhecimentos{
+      width: 30px;
+      margin-right: 2rem;
+    }
+
+      .container{
+        width: 100px;
+      }    
+
+      .items:first-child {
+        transform: rotateY(calc(40deg * 1)) translateZ(150px);
+      }
+      .items:nth-child(2) {
+        transform: rotateY(calc(40deg * 2)) translateZ(150px);
+      }
+      .items:nth-child(3) {
+        transform: rotateY(calc(40deg * 3)) translateZ(150px);
+      }
+      .items:nth-child(4) {
+        transform: rotateY(calc(40deg * 4)) translateZ(150px);
+      }
+      .items:nth-child(5) {
+        transform: rotateY(calc(40deg * 5)) translateZ(150px);
+      }
+
+
+  }

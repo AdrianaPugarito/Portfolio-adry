@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="api.css">
+  <title>Document</title>
+</head>
+<body>
+  <!--Menu-->
+    <header class="header">
+        <div class="logo-header">
+            <img class="img" src="img/adry.jpg" alt="Foto-Adriana">
+        </div>
+
+        <!--Home-->
+      <section id="titulo">
+        <article>
+          <h1>
+            Desenvolvedor Front-End Junior e Game Designer
+          </h1>
+          <hr> <br>
+        </article>
+  
+        <nav class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/menu-1899422-1606841.png" alt=""></i>
+            </label>
+
+            <ul>
+              <li><a href=><h3></h3></a></li>
+              <li><a href="/#quem-sou"><h3>Quem sou</h3></a></li>
+              <li><a href="/#projetos"><h3>Projetos</h3></a></li>
+              <li><a href="/#conhecimentos"><h3>Hard Skills</h3></a></li>
+              <li><a href="apiGitHub.html"><h3>API GitHub</h3></a></li>
+              <li><a href="contato.html"><h3>Contato</h3></a></li>
+            </ul>
+        </nav>
+      </header>
+       
+       <div id="app" class="app">
+         <img  class="img-github"src="https://www.digitaltoo.com/wp-content/uploads/sites/3/2015/06/GitHub.png" alt="">
+          <!--Texto Animado -->
+        <div class="apiGitHub">
+            <h2 class="titulo">Busca em GitHub <span class="typed"></span></h2>
+        </div>
+
+        <div class="container">
+          <form id="form">
+            <div class="form-group">
+              <input type="text" id="usuario-nome" placeholder="Usuário de Github" class="form-control"/>
+            </div>
+
+             <div class="form-group">
+                <button class="btn btn-danger">Buscar</button>
+            </div>
+          </form>
+        </div>
+  
+        <div id="resultado"></div>
+    </div>
+</body> 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script><!--CDN type.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="textAnimado.js"></script>
+<script src="apiGitHub.js"></script>
+</html>
